@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  background: url(./bg.jpg);
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+.Box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  width: 600px;
+  padding: 65px 70px;
+  border-radius: 30px;
+  height: 370px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 86px 80px 44px -1px rgba(255, 0, 0, 0.77);
+  -moz-box-shadow: 86px 80px 44px -1px rgba(255, 0, 0, 0.77);
+  box-shadow: 86px 80px 44px -1px rgba(255, 0, 0, 0.6);
+}
+.Box h2 {
+  margin: 0 0 30px;
+  padding: 0px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.Box .inputbox {
+  position: relative;
+}
+
+.Box .inputbox input {
+  padding: 10px 0px;
+  margin-left: 5px;
+  letter-spacing: 2px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: none;
+  color: white;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  border-bottom: 4px solid #1da9a470;
+}
+
+.Box .inputbox label {
+  font-size: 16px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px 0px;
+  transition: .5s;
+  pointer-events: none;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.Box .inputbox input:focus ~ label,
+.Box .inputbox input:valid ~label
+{
+  top: -20px;
+  left: 0;
+  font-size: 15px;
+}
+
+.Box input[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  margin-left: 31%;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+<!-- =============================================================================================================================================
+                                                        <Login Box>    
+========================================================================================================================================= -->
+
+
+<div class="Box">
+    <img src="/bg.jpg" alt="">
+
+    <h2>Login</h2>
+    <form action="">
+
+        <div class="inputbox">
+            <input type="boxtext" name="" required=""> <label for=""> Username</label>
+        </div>
+        <div class="inputbox">
+            <input type="password" name="" required=""> <label for=""> Password</label>
+        </div>
+        <input type="submit" name="" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+</html>
